@@ -2,3 +2,63 @@
 body {
     font-family: Arial, sans-serif;
 }
+
+.properties-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.properties-container div {
+    width: calc(25% - 20px);  /* 25% for 4 properties, minus margin */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.properties-container div:hover {
+    transform: translateY(-5px);
+}
+
+.property-price {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.property-details {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.property-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.property-button:hover {
+    background-color: #2980b9;
+}
+
+.view-all-button {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-all-button:hover {
+    background-color: #27ae60;
+}
